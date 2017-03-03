@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Entities\Institute.cs" />
     <Compile Include="Entities\Occupation.cs" />
+    <Compile Include="Entities\Worker.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.Designer.cs">
       <DependentUpon>201703030709250_AddInstitutesTable.cs</DependentUpon>
@@ -58,6 +59,10 @@
     <Compile Include="Migrations\201703030733277_AddOccupationsTable.cs" />
     <Compile Include="Migrations\201703030733277_AddOccupationsTable.Designer.cs">
       <DependentUpon>201703030733277_AddOccupationsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703030742045_AddWorkersTable.cs" />
+    <Compile Include="Migrations\201703030742045_AddWorkersTable.Designer.cs">
+      <DependentUpon>201703030742045_AddWorkersTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MRDbContext.cs" />
@@ -73,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703030733277_AddOccupationsTable.resx">
       <DependentUpon>201703030733277_AddOccupationsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703030742045_AddWorkersTable.resx">
+      <DependentUpon>201703030742045_AddWorkersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
