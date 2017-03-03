@@ -15,24 +15,27 @@ namespace MedicalRepresentative.DataAccessLayer
         {
             modelBuilder.Entity<Institute>()
                 .Property(x => x.Name)
-                .HasMaxLength(255);
+                .HasMaxLength(255)
+                .IsRequired();
 
             modelBuilder.Entity<Occupation>()
                 .Property(x => x.Name)
-                .HasMaxLength(255);
+                .HasMaxLength(255)
+                .IsRequired();
 
             modelBuilder.Entity<Worker>()
                 .Property(x => x.Name)
-                .HasMaxLength(255);
+                .HasMaxLength(255)
+                .IsRequired();
 
             modelBuilder.Entity<Worker>()
-                .HasOptional(x => x.Institute)
+                .HasRequired(x => x.Institute)
                 .WithMany()
                 .HasForeignKey(x => x.InstituteId)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Worker>()
-                .HasOptional(x => x.Occupation)
+                .HasRequired(x => x.Occupation)
                 .WithMany()
                 .HasForeignKey(x => x.OccupationId)
                 .WillCascadeOnDelete(false);

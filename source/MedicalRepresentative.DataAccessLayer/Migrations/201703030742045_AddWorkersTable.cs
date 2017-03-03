@@ -1,5 +1,6 @@
 namespace MedicalRepresentative.DataAccessLayer.Migrations
 {
+    using System;
     using System.Data.Entity.Migrations;
     
     public partial class AddWorkersTable : DbMigration
@@ -11,9 +12,9 @@ namespace MedicalRepresentative.DataAccessLayer.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(maxLength: 255),
-                        InstituteId = c.Int(),
-                        OccupationId = c.Int(),
+                        Name = c.String(nullable: false, maxLength: 255),
+                        InstituteId = c.Int(nullable: false),
+                        OccupationId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Institutes", t => t.InstituteId)

@@ -64,6 +64,10 @@
     <Compile Include="Migrations\201703030742045_AddWorkersTable.Designer.cs">
       <DependentUpon>201703030742045_AddWorkersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.cs" />
+    <Compile Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.Designer.cs">
+      <DependentUpon>201703031016253_SetNotNullToInstituteAndOccupationNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MRDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703030742045_AddWorkersTable.resx">
       <DependentUpon>201703030742045_AddWorkersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.resx">
+      <DependentUpon>201703031016253_SetNotNullToInstituteAndOccupationNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
