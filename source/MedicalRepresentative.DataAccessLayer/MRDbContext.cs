@@ -40,6 +40,15 @@ namespace MedicalRepresentative.DataAccessLayer
                 .HasForeignKey(x => x.OccupationId)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Report>()
+                .HasRequired(x => x.Worker)
+                .WithMany()
+                .HasForeignKey(x => x.WorkerId)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Report>()
+                .Property(x => x.Date)
+                .IsRequired();
         }
     }
 }

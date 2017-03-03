@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Entities\Institute.cs" />
     <Compile Include="Entities\Occupation.cs" />
+    <Compile Include="Entities\Report.cs" />
     <Compile Include="Entities\Worker.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.Designer.cs">
@@ -67,6 +68,10 @@
     <Compile Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.cs" />
     <Compile Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.Designer.cs">
       <DependentUpon>201703031016253_SetNotNullToInstituteAndOccupationNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703031141327_AddReportsTable.cs" />
+    <Compile Include="Migrations\201703031141327_AddReportsTable.Designer.cs">
+      <DependentUpon>201703031141327_AddReportsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MRDbContext.cs" />
@@ -88,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703031016253_SetNotNullToInstituteAndOccupationNames.resx">
       <DependentUpon>201703031016253_SetNotNullToInstituteAndOccupationNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703031141327_AddReportsTable.resx">
+      <DependentUpon>201703031141327_AddReportsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
