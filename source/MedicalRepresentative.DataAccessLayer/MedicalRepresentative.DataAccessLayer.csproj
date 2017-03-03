@@ -50,9 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Institute.cs" />
+    <Compile Include="Entities\Occupation.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.cs" />
     <Compile Include="Migrations\201703030709250_AddInstitutesTable.Designer.cs">
       <DependentUpon>201703030709250_AddInstitutesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703030733277_AddOccupationsTable.cs" />
+    <Compile Include="Migrations\201703030733277_AddOccupationsTable.Designer.cs">
+      <DependentUpon>201703030733277_AddOccupationsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MRDbContext.cs" />
@@ -65,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703030709250_AddInstitutesTable.resx">
       <DependentUpon>201703030709250_AddInstitutesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703030733277_AddOccupationsTable.resx">
+      <DependentUpon>201703030733277_AddOccupationsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
